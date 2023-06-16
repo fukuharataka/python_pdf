@@ -14,8 +14,7 @@ RUN apt-get install -y vim less
 
 WORKDIR /src
 
-COPY sprit_pdf.py /src
-COPY requirements.txt /src
+COPY . /src
 
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
